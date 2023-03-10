@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": null,
+    "database": "fullStackDB",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": null,
+    "database": "fullStackDB",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": null,
+    "database": "fullStackDB",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "docker": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "fullStackDB",
+    "host": "db",
+    "dialect": "postgres"
+  }
+}
