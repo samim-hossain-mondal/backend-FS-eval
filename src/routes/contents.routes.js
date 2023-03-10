@@ -10,5 +10,6 @@ router.put('/:name', controllers.updateContentField);
 router.delete('/:name/:fieldname', controllers.deleteContentField);
 router.get('/:name', controllers.getAllFieldsByName);
 router.patch('/:name/:fieldname', controllers.editContentField);
+router.patch('update/:name', controllers.updateContentName);
 
 module.exports = router;
