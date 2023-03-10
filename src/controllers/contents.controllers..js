@@ -19,6 +19,17 @@ const getContentByName = async (req, res, next) => {
   }
 };
 
+const updateContentName = async (req, res, next) => {
+  try {
+    const { name } = req.params;
+    const { newName } = req.body;
+    const content = await services.updateContentName(name, newName);
+    res.status(200).json(content);
+  } catch (error) {
+    next(error);
+  }
+};
+
 const createContent = async (req, res, next) => {
   try {
     const { name } = req.body;
@@ -91,5 +102,6 @@ module.exports = {
   deleteContentField,
   addContentField,
   getAllFieldsByName,
-  editContentField
+  editContentField,
+  updateContentName
 };

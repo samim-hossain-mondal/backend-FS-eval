@@ -6,6 +6,17 @@ const getAllContents = async () => {
   return allContents;
 };
 
+const updateContentName = async (name, newName) => {
+  console.log(name, newName);
+  const content = await Contents.findOne({ where: { name } });
+  if (!content) {
+    throw new HttpError('Content not found', 404);
+  }
+  content.name = newName;
+  await content.save();
+  return content;
+};
+
 const getContentByName = async (name) => {
   const content = await Contents.findOne({ where: { name } });
   if (!content) {
@@ -88,5 +99,6 @@ module.exports = {
   updateContentField,
   deleteContentField,
   addContentField,
-  editContentField
+  editContentField,
+  updateContentName
 };
