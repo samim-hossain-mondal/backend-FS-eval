@@ -11,15 +11,15 @@ const createCollection = async (id, body) => {
   return collection;
 };
 
-const updateCollectionField = async (name, field) => {
-  const collection = await Collections.findOne({ where: { name } });
+const updateCollectionField = async (id, body) => {
+  const collection = await Collections.findOne({ where: { id } });
   if (!collection) {
     throw new HttpError('Collection not found', 404);
   }
-  collection.field = field;
-  await collection.save();
-  return collection;
+  const contentId = collection.contentId;
+  await collection.update({ contentId, entry: body.entry }, { where: { id } });
 };
+
 
 const deleteCollectionField = async (id) => {
   const collection = await Collections.findOne({ where: { id } });

@@ -20,11 +20,11 @@ const createCollection = async (req, res, next) => {
 
 const updateCollectionField = async (req, res, next) => {
   try {
-    const { name } = req.params;
-    const { field } = req.body;
-    const collection = await services.updateCollectionField(name, field);
+    const { id } = req.params;
+    const collection = await services.updateCollectionField(id, req.body);
     res.status(200).json(collection);
-  } catch (error) {
+  }
+  catch (error) {
     next(error);
   }
 };

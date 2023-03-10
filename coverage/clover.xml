@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1678463376757" clover="3.2.0">
-  <project timestamp="1678463376757" name="All files">
-    <metrics statements="206" coveredstatements="165" conditionals="34" coveredconditionals="17" methods="38" coveredmethods="30" elements="278" coveredelements="212" complexity="0" loc="206" ncloc="206" packages="4" files="8" classes="8"/>
+<coverage generated="1678467516414" clover="3.2.0">
+  <project timestamp="1678467516414" name="All files">
+    <metrics statements="204" coveredstatements="164" conditionals="34" coveredconditionals="17" methods="38" coveredmethods="30" elements="276" coveredelements="211" complexity="0" loc="204" ncloc="204" packages="4" files="8" classes="8"/>
     <package name="database.models">
       <metrics statements="29" coveredstatements="28" conditionals="10" coveredconditionals="7" methods="7" coveredmethods="7"/>
       <file name="collections.js" path="/Users/samim_hossain_mondal/Desktop/full-stack-eval/backend/database/models/collections.js">
@@ -44,9 +44,9 @@
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="85" coveredstatements="77" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="12"/>
+      <metrics statements="84" coveredstatements="76" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="12"/>
       <file name="collections.controllers.js" path="/Users/samim_hossain_mondal/Desktop/full-stack-eval/backend/src/controllers/collections.controllers.js">
-        <metrics statements="26" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <metrics statements="25" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
@@ -64,7 +64,6 @@
         <line num="23" count="2" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="33" count="2" type="stmt"/>
@@ -138,9 +137,9 @@
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="88" coveredstatements="56" conditionals="24" coveredconditionals="10" methods="17" coveredmethods="10"/>
+      <metrics statements="87" coveredstatements="56" conditionals="24" coveredconditionals="10" methods="17" coveredmethods="10"/>
       <file name="collections.services.js" path="/Users/samim_hossain_mondal/Desktop/full-stack-eval/backend/src/services/collections.services.js">
-        <metrics statements="22" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <metrics statements="21" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
@@ -155,7 +154,6 @@
         <line num="17" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
         <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
